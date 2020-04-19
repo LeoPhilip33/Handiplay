@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class ButtonOptions : MonoBehaviour
 {
-    public GameObject hideOptions;
-    public GameObject hideJouer;
-    public GameObject hideCredits;
     public GameObject OptionsMenu;
     
     // Start is called before the first frame update
@@ -23,9 +20,6 @@ public class ButtonOptions : MonoBehaviour
 
     public void ButtonClick()
     {
-        hideOptions.SetActive(false);
-        hideJouer.SetActive(false);
-        hideCredits.SetActive(false);
         OptionsMenu.SetActive(true);
     }
 }
