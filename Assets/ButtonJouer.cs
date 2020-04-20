@@ -7,22 +7,17 @@ public class ButtonJouer : MonoBehaviour
     public GameObject hideOptions;
     public GameObject hideJouer;
     public GameObject hideCredits;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public AudioClip impact;
+    AudioSource audioSource;
 
     public void ButtonClick()
     {
         hideOptions.SetActive(false);
         hideJouer.SetActive(false);
         hideCredits.SetActive(false);
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(impact, 0.7F);
     }
 }
